@@ -2,179 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26d1c20-b6d8-4dad-b2e3-f500baca57e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/Donationcoin.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/Math.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/contracts/.placeholder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/contracts/ConvertLib.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/contracts/MetaCoin.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/contracts/Migrations.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/migrations/1_initial_migration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/migrations/2_deploy_contracts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/test/.placeholder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/test/TestMetacoin.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/test/metacoin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/truffle-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../metacoin/truffle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/contracts/DonationCoin.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/contracts/Migrations.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Migrations.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/migrations/1_initial_migration.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/1_initial_migration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/AddressUtils.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/Bounty.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ECRecovery.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/LimitBalance.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/MerkleProof.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ReentrancyGuard.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/access/SignatureBouncer.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/Crowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/distribution/FinalizableCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/distribution/PostDeliveryCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/distribution/RefundableCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/distribution/utils/RefundVault.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/emission/AllowanceCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/price/IncreasingPriceCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/validation/CappedCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/validation/TimedCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/crowdsale/validation/WhitelistedCrowdsale.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/lifecycle/Destructible.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/lifecycle/TokenDestructible.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/math/Math.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/SafeMath.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/CanReclaimToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Claimable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Contactable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/DelayedClaimable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/HasNoContracts.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/HasNoEther.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/HasNoTokens.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Heritable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/NoOwner.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Superuser.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/Whitelist.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/rbac/RBAC.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/ownership/rbac/Roles.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/payment/PullPayment.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/payment/SplitPayment.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/BasicToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/BasicToken.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/BurnableToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/CappedToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ERC20.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ERC20Basic.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/PausableToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/RBACMintableToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/StandardBurnableToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/StandardToken.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/TokenTimelock.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC20/TokenVesting.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/DeprecatedERC721.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Basic.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721BasicToken.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Holder.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Receiver.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC827/ERC827.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/contracts/token/ERC827/ERC827Token.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/Bounty.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/Heritable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/LimitBalance.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ReentrancyGuard.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/SimpleSavingsWallet.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/access/SignatureBouncer.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/AllowanceCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/CappedCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/Crowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/FinalizableCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/IncreasingPriceCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/IndividuallyCappedCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/MintedCrowdsale.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/MintedCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/PostDeliveryCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/RefundVault.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/RefundableCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/TimedCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/crowdsale/WhitelistedCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/examples/SampleCrowdsale.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/examples/SimpleToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/EVMRevert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/EVMThrow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/advanceToBlock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/assertJump.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/assertRevert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/decodeLogs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/ether.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/expectEvent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/expectThrow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/increaseTime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/latestTime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/merkleTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/sendTransaction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/sign.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/toPromise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/helpers/transactionMined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/library/ECRecovery.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/library/Math.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/library/MerkleProof.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/lifecycle/Destructible.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/lifecycle/Pausable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/lifecycle/TokenDestructible.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/math/SafeMath.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/CanReclaimToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Claimable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Contactable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/DelayedClaimable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/HasNoContracts.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/HasNoEther.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/HasNoTokens.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Ownable.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Ownable.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Superuser.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/Whitelist.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/ownership/rbac/RBAC.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/payment/PullPayment.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/payment/SplitPayment.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/BasicToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/BurnableToken.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/BurnableToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/CappedToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/DetailedERC20.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/MintableToken.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/MintableToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/PausableToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/RBACMintableToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/SafeERC20.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/StandardBurnableToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/StandardToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/TokenTimelock.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC20/TokenVesting.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC721/ERC721BasicToken.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC721/ERC721BasicToken.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC721/ERC721MintBurn.behaviour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC721/ERC721Token.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/node_modules/openzeppelin-solidity/test/token/ERC827/ERC827Token.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/truffle-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Blockchain/truffle.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/BasicToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/BasicToken.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Math.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/math/Math.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/SafeMath.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/math/SafeMath.sol" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,28 +23,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
+          <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="sol" value="5" />
+          <entry key="sol" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Solidity file" value="5" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Solidity file" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="210" />
-          <entry key="sol" value="635" />
+          <entry key="js" value="285" />
+          <entry key="sol" value="640" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="210" />
-          <entry key="Solidity file" value="635" />
+          <entry key="JavaScript" value="285" />
+          <entry key="Solidity file" value="640" />
         </counts>
       </usages-collector>
     </session>
@@ -225,8 +56,18 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contracts/Donationcoin.sol">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/math/SafeMath.sol">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/StandardToken.sol">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/DonationToken.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
@@ -235,8 +76,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/zeppelin-solidity/contracts/math/SafeMath.sol">
+        <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/ERC20Basic.sol">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/migrations/1534400641_deploy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="55" selection-start-column="55" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/BasicToken.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -245,22 +109,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/Math.sol">
+        <entry file="file://$PROJECT_DIR$/contracts/math/Math.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/truffle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -276,6 +128,8 @@
         <option value="$PROJECT_DIR$/truffle.js" />
         <option value="$PROJECT_DIR$/migrations/1534398856_donationcoin.js" />
         <option value="$PROJECT_DIR$/contracts/Donationcoin.sol" />
+        <option value="$PROJECT_DIR$/contracts/BasicToken.sol" />
+        <option value="$PROJECT_DIR$/migrations/1534400641_deploy.js" />
       </list>
     </option>
   </component>
@@ -334,12 +188,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534400379615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534401389633" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\igloo\Desktop\승재\HaniumBlockchainProject\donation-token\contracts\math" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\igloo\Desktop\승재\HaniumBlockchainProject\donation-token\contracts" />
     </key>
@@ -366,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534398421303</updated>
-      <workItem from="1534398422835" duration="1947000" />
+      <workItem from="1534398422835" duration="2954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1947000" />
+    <option name="totallyTimeSpent" value="2954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2182" y="56" width="1400" height="1000" extended-state="0" />
@@ -423,9 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrations/1534398856_donationcoin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -447,17 +301,46 @@
     <entry file="file://$PROJECT_DIR$/node_modules/zeppelin-solidity/contracts/math/Math.sol">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Math.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Donationcoin.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/DonationToken.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/ERC20Basic.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/math/Math.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/math/SafeMath.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/StandardToken.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/BasicToken.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/1534400641_deploy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
         </state>
       </provider>
     </entry>
