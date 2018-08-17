@@ -13,13 +13,26 @@
  */
 
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
+    // See <http://truffleframework.com/docs/advanced/configuration>
+    // to customize your Truffle configuration!
     networks :{
         development: {
             host: "127.0.0.1",
             port: 8545,
-            network_id: "*"
+            network_id: "*",
         }
     }
 };
+
+// module.exports = {
+//     // See <http://truffleframework.com/docs/advanced/configuration>
+//     // to customize your Truffle configuration!
+//     networks :{
+//         development: {
+//             host: "14.63.194.247",
+//             port: 8545,
+//             network_id: "74127412",
+//             from: "0x99de12f3150b393c89ddccb384dd9cf8fa8414c0"
+//         }
+//     }
+// };
