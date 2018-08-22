@@ -35,4 +35,8 @@ contract DonationToken is StandardToken{
   function rankOf(address who) public view returns (uint256){
     return rank[who];
   }
+
+  function getRank() public view returns (address) {
+
+  }
 }
