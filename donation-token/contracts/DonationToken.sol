@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import '../node_modules/zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
+import './StandardToken.sol';
 
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
