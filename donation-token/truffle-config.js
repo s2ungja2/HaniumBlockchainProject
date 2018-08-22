@@ -15,11 +15,21 @@
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
+<<<<<<< HEAD:donation-token/truffle-config.js
   networks :{
       local_ganache: {
           host: "127.0.0.1",
           port: 9545,
           network_id: "*",
       }
+=======
+
+  network: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*"
+    }
+>>>>>>> 66c3984efa49b4ae53134956b5560aa88b44567f:Blockchain/truffle.js
   }
 };
