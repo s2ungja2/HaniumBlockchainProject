@@ -1,4 +1,4 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.4.24;
 
 import "./StandardToken.sol";
 
@@ -39,6 +39,14 @@ contract DonationToken is StandardToken{
   }
 
   function getRank() public view returns (address) {
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+  
+>>>>>>> 0632c544ec60a994144ec42331b30a21a9acc977
+>>>>>>> 5976dacaac2583b94f97bd8115e36ef093845d00
   }
 }
