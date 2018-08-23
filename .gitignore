@@ -303,5 +303,8 @@ package-lock.json
 #vscode
 .vscode
 
+#metacoin
+.metacoin
+
 
 # End of https://www.gitignore.io/api/macos,android,solidity,androidstudio,soliditytruffle
