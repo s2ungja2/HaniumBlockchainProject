@@ -7,17 +7,19 @@ contract DonationToken is StandardToken{
   string public name = "DonationToken";
   string public symbol = "DNTT";
   uint8 public decimals = 8;
-  mapping (address => uint256) public rank;
+  mapping (address => uint256) public transfercount;
+  mapping (address => uint16) public rank;
 
   function DonationToken() public {
     totalSupply_ = INITIAL_SUPPLY * ( 10 ** uint256(decimals));
     balances[msg.sender] = INITIAL_SUPPLY;
+    rank[msg.sender] = 1;
   }
 
   function transfer(address to, uint256 value) public returns (bool) {
     super.transfer(to, value);
     balances[msg.sender] = balances[msg.sender].add(value.div(100));
-    rank[msg.sender] = rank[msg.sender].add(1);
+    transfercount[msg.sender] = transfercount[msg.sender].add(1);
   }
 
   function allowance(address owner, address spender) public view returns (uint256) {
@@ -32,11 +34,15 @@ contract DonationToken is StandardToken{
     super.approve(spender, value);
   }
 
-  function rankOf(address who) public view returns (uint256){
-    return rank[who];
+  function getTransfercount(address who) public view returns (uint256){
+    return transfercount[who];
   }
 
   function getRank() public view returns (address) {
+<<<<<<< HEAD
     
+=======
+  
+>>>>>>> 0632c544ec60a994144ec42331b30a21a9acc977
   }
 }
