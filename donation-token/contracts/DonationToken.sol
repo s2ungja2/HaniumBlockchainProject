@@ -1,16 +1,16 @@
 pragma solidity ^0.4.23;
 
-import './StandardToken.sol';
+import "./StandardToken.sol";
 
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
-  string public name = 'DonationToken';
-  string public symbol = 'DNTT';
+  string public name = "DonationToken";
+  string public symbol = "DNTT";
   uint8 public decimals = 8;
   mapping (address => uint256) public transfercount;
   mapping (address => uint16) public rank;
 
-  function DonationToken() public {
+  constructor() public {
     totalSupply_ = INITIAL_SUPPLY * ( 10 ** uint256(decimals));
     balances[msg.sender] = INITIAL_SUPPLY;
     rank[msg.sender] = 1;
@@ -39,6 +39,6 @@ contract DonationToken is StandardToken{
   }
 
   function getRank() public view returns (address) {
-  
+    
   }
 }
