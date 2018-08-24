@@ -20,54 +20,58 @@ contract DonationToken is StandardToken{
     info[msg.sender] = 0;
   }
 
-  function setUser1(address who) public {
+  function setUser1(address _who) public {
     require (info[msg.sender] == 0);
-    info[who] = 1;
+    info[_who] = 1;
   }
 
-  function setGov(address who) public {
+  function setGov(address _who) public {
     require (info[msg.sender] == 0);
-    info[who] = 2;
+    info[_who] = 2;
   }
 
-  function setUser2(address who) public {
+  function setUser2(address _who) public {
     require (info[msg.sender] == 0);
-    info[who] = 3;
+    info[_who] = 3;
   }
 
-  function getInfo(address who) public view returns (uint8) {
-    return info[who];
+  function getInfo(address _who) public view returns (uint8) {
+    return info[_who];
   }
 
-  function getRank(address who) public view returns (uint16) {
-    return rank[who];
+  function getRank(address _who) public view returns (uint16) {
+    return rank[_who];
   }
 
-  function getTransfercount(address who) public view returns (uint256) {
-    return transfercount[who];
+  function getTransfercount(address _who) public view returns (uint256) {
+    return transfercount[_who];
   }
 
   function viewRank() public view returns (address) {
 
   }
 
-  function transfer(address to, uint256 value) public returns (bool) {
-    require (info[msg.sender] == 0 || (info[msg.sender] == 1 && info[to] == 2) || (info[msg.sender] == 2 && info[to] == 3));
-    super.transfer(to, value);
-    balances[msg.sender] = balances[msg.sender].add(value.div(100));
+  function transfer(address _to, uint256 _value) public returns (bool) {
+    require (info[msg.sender] == 0 || (info[msg.sender] == 1 && info[_to] == 2) || (info[msg.sender] == 2 && info[_to] == 3));
+    super.transfer(_to, _value);
+    balances[msg.sender] = balances[msg.sender].add(_value.div(100));
     transfercount[msg.sender] = transfercount[msg.sender].add(1);
   }
 
-  function allowance(address owner, address spender) public view returns (uint256) {
-    super.allowance(owner, spender);
+  function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+    require (info[msg.sender] == 0 || (info[msg.sender] == info[_from]));
+    require ((info[_from] == 1 && info[_to] == 2) || (info[_from] == 2 && info[_to] == 3));
+    super.transferFrom(_from, _to, _value);
+    balances[_from] = balances[_from].add(_value.div(100));
+    transfercount[_from] = transfercount[_from].add(1);
   }
 
-  function transferFrom(address from, address to, uint256 value) public returns (bool) {
-    super.transferFrom(from, to, value);
+  function allowance(address _owner, address _spender) public view returns (uint256) {
+    super.allowance(_owner, _spender);
   }
 
-  function approve(address spender, uint256 value) public returns (bool) {
-    super.approve(spender, value);
+  function approve(address _spender, uint256 _value) public returns (bool) {
+    super.approve(_spender, _value);
   }
 
   /// @TODO
