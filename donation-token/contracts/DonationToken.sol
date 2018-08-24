@@ -4,11 +4,18 @@ import "./StandardToken.sol";
 
 /// @title 기부토큰 컨트랙
 /// @author 이승재, 송현수, 남윤서
+
+/// @TODO
+/// 1. viewRank 구현
+/// 2. TX Data를 solidity에 담는법
+/// 3. solidity와 db 연동하는 api가 있는지
+
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
   string public name = "DonationToken";
   string public symbol = "DNTT";
   uint8 public decimals = 8;
+
   mapping (address => uint256) public transfercount;
   mapping (address => uint16) public rank;
   mapping (address => uint8) public info;
@@ -73,10 +80,4 @@ contract DonationToken is StandardToken{
   function approve(address _spender, uint256 _value) public returns (bool) {
     super.approve(_spender, _value);
   }
-
-  /// @TODO
-  /// 1. viewRank 구현
-  /// 2. setUser1(기부자) / setGov(기부단체) / setUser2(기부받는사람) 구현
-  /// 3. transfer수정 (User1은 Gov로만, Gov는 User2로만 가능)
-  /// 4. info mapping 추가 - 2. 에서 사용할 정보
 }
