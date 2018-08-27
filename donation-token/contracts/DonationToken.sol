@@ -5,7 +5,7 @@ import "./StandardToken.sol";
 /// @title 기부토큰 컨트랙
 /// @author 이승재, 송현수, 남윤서
 
-/// @TODO
+/// TODO
 /// 1. viewRank 구현
 /// 2. TX Data를 solidity에 담는법
 /// 3. solidity와 db 연동하는 api가 있는지
