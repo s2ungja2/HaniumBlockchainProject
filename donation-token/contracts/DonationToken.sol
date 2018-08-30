@@ -27,17 +27,17 @@ contract DonationToken is StandardToken{
     info[msg.sender] = 0;
   }
 
-  function setUser1(address _who) public {
+  function setUser1(address _who) public {  // 기부자
     require (info[msg.sender] == 0);
     info[_who] = 1;
   }
 
-  function setGov(address _who) public {
+  function setGov(address _who) public {    // 기부단체
     require (info[msg.sender] == 0);
     info[_who] = 2;
   }
 
-  function setUser2(address _who) public {
+  function setUser2(address _who) public {  // 기부받는사람
     require (info[msg.sender] == 0);
     info[_who] = 3;
   }
@@ -55,7 +55,7 @@ contract DonationToken is StandardToken{
   }
 
   function viewRank() public view returns (address) {
-
+    
   }
 
   function transfer(address _to, uint256 _value) public returns (bool) {
