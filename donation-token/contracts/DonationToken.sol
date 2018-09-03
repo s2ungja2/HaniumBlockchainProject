@@ -6,9 +6,7 @@ import "./StandardToken.sol";
 /// @author 이승재, 송현수, 남윤서
 
 /// TODO
-/// 1. viewRank 구현
-/// 2. TX Data를 solidity에 담는법
-/// 3. solidity와 db 연동하는 api가 있는지
+/// 1. TX Data를 solidity에 담는법
 
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
@@ -17,13 +15,11 @@ contract DonationToken is StandardToken{
   uint8 public decimals = 8;
 
   mapping (address => uint256) public transfercount;
-  mapping (address => uint16) public rank;
   mapping (address => uint8) public info;
 
   constructor() public {
     totalSupply_ = INITIAL_SUPPLY * ( 10 ** uint256(decimals));
     balances[msg.sender] = INITIAL_SUPPLY;
-    rank[msg.sender] = 0;
     info[msg.sender] = 0;
   }
 
@@ -46,16 +42,8 @@ contract DonationToken is StandardToken{
     return info[_who];
   }
 
-  function getRank(address _who) public view returns (uint16) {
-    return rank[_who];
-  }
-
   function getTransfercount(address _who) public view returns (uint256) {
     return transfercount[_who];
-  }
-
-  function viewRank() public view returns (address) {
-    
   }
 
   function transfer(address _to, uint256 _value) public returns (bool) {
