@@ -7,8 +7,9 @@
         android:background="@drawable/logo"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
+        android:layout_gravity="top"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
@@ -17,5 +18,5 @@
         android:text="로그인"
         android:textSize="20dp"
         android:textColor="@color/defaultcolor"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="200dp"/>
 </LinearLayout>
