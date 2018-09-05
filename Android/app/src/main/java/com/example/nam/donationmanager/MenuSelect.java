@@ -13,40 +13,58 @@ public class MenuSelect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_select);
 
-        TextView token_change = (TextView)findViewById(R.id.token_change);
-        TextView group_select = (TextView)findViewById(R.id.group_select);
-        TextView check_history = (TextView)findViewById(R.id.check_history);
+        TextView token_change = findViewById(R.id.token_change);
+        TextView donation_group = findViewById(R.id.donation_group);
+        TextView donation_solo = findViewById(R.id.donation_solo);
+        TextView check_history = findViewById(R.id.check_history);
         TextView profile = findViewById(R.id.profile);
+        TextView ranking = findViewById(R.id.ranking_list);
 
-        token_change.setOnClickListener(new View.OnClickListener() {
+        donation_solo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), TokenChange.class);
-                startActivity(intent1);
+                Intent intent_select = new Intent(getApplicationContext(), DonationSolo.class);
+                startActivity(intent_select);
             }
         });
 
-        group_select.setOnClickListener(new View.OnClickListener() {
+        donation_group.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(getApplicationContext(), GroupSelect.class);
-                startActivity(intent2);
+                Intent intent_select = new Intent(getApplicationContext(), DonationGroup.class);
+                startActivity(intent_select);
             }
         });
 
         check_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(getApplicationContext(), CheckHistory.class);
-                startActivity(intent3);
+                Intent intent_history = new Intent(getApplicationContext(), CheckHistory.class);
+                startActivity(intent_history);
+            }
+        });
+
+        ranking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_ranking = new Intent(getApplicationContext(), RankingList.class);
+                startActivity(intent_ranking);
+            }
+        });
+
+        token_change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_change = new Intent(getApplicationContext(), TokenChange.class);
+                startActivity(intent_change);
             }
         });
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(getApplicationContext(), Profile.class);
-                startActivity(intent4);
+                Intent intent_profile = new Intent(getApplicationContext(), Profile.class);
+                startActivity(intent_profile);
             }
         });
     }

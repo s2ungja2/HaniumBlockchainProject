@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultcolor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:background="@drawable/wing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/solo_token"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:inputType="number"
+        android:hint="      기부할 금액을 입력해주세요."
+        android:textColorHint="#fff"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/submit_donation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF"
+        android:text="기부하기"
+        android:textSize="20dp"
+        android:textColor="@color/defaultcolor" />
+</RelativeLayout>
