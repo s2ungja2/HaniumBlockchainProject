@@ -46,19 +46,27 @@ contract DonationToken is StandardToken{
     return transfercount[_who];
   }
 
-  function transfer(address _to, uint256 _value) public returns (bool) {
+  function donate(address _to, uint256 _value) public returns (bool) {
     require (info[msg.sender] == 0 || (info[msg.sender] == 1 && info[_to] == 2) || (info[msg.sender] == 2 && info[_to] == 3));
     super.transfer(_to, _value);
     balances[msg.sender] = balances[msg.sender].add(_value.div(100));
     transfercount[msg.sender] = transfercount[msg.sender].add(1);
   }
 
-  function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+  function donateFrom(address _from, address _to, uint256 _value) public returns (bool) {
     require (info[msg.sender] == 0 || (info[msg.sender] == info[_from]));
     require ((info[_from] == 1 && info[_to] == 2) || (info[_from] == 2 && info[_to] == 3));
     super.transferFrom(_from, _to, _value);
     balances[_from] = balances[_from].add(_value.div(100));
     transfercount[_from] = transfercount[_from].add(1);
+  }
+
+  function transfer(address _to, uint256 _value) public returns (bool) {
+    super.transfer(_to, _value);
+  }
+
+  function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+    super.transferFrom(_from, _to, _value);
   }
 
   function allowance(address _owner, address _spender) public view returns (uint256) {
