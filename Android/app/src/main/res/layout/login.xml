@@ -14,12 +14,14 @@
     <EditText
         android:hint=" 아이디"
         android:textSize="20dp"
+        android:maxLength="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"/>
     <EditText
         android:hint=" 패스워드"
         android:textSize="20dp"
+        android:maxLength="15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
