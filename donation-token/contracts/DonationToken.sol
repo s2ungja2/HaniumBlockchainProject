@@ -25,18 +25,20 @@ contract DonationToken is StandardToken{
     owner = msg.sender;
   }
 
-  function setUser1(address _who) public {  // 기부자
-    require (msg.sender == owner);
+  modifier onlyOwner {
+    require(msg.sender == owner);
+    _;
+  }
+
+  function setUser1(address _who) public onlyOwner {  // 기부자
     info[_who] = 1;
   }
 
-  function setGov(address _who) public {    // 기부단체
-    require (msg.sender == owner);
+  function setGov(address _who) public onlyOwner {    // 기부단체
     info[_who] = 2;
   }
 
-  function setUser2(address _who) public {  // 기부받는사람
-    require (msg.sender == owner);
+  function setUser2(address _who) public onlyOwner {  // 기부받는사람
     info[_who] = 3;
   }
 
