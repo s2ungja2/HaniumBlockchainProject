@@ -81,5 +81,5 @@
         android:background="#FFF"
         android:textColor="@color/defaultcolor"
         android:textSize="20dp"
-        android:text="교환"/>
+        android:text="교환" />
 </LinearLayout>

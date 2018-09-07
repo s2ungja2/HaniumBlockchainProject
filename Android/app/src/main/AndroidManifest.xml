@@ -16,12 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GroupSelect"/>
+        <activity android:name=".DonationGroup"/>
+        <activity android:name=".DonationSolo"/>
         <activity android:name=".MenuSelect"/>
         <activity android:name=".CheckHistory"/>
         <activity android:name=".TokenChange"/>
         <activity android:name=".Profile"/>
         <activity android:name=".DetailStep"/>
+        <activity android:name=".Login"/>
+        <activity android:name=".RankingList"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
