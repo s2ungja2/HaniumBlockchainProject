@@ -5,38 +5,36 @@ import "./StandardToken.sol";
 /// @title 기부토큰 컨트랙
 /// @author 이승재, 송현수, 남윤서
 
-/// TODO
-/// 1. TX Data를 solidity에 담는법
-
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
   string public name = "DonationToken";
   string public symbol = "DNTT";
-  uint8 public decimals = 8;
   address public owner;
 
   mapping (address => uint256) public transfercount;
   mapping (address => uint8) public info;
 
   constructor() public {
-    totalSupply_ = INITIAL_SUPPLY * ( 10 ** uint256(decimals));
+    totalSupply_ = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
     info[msg.sender] = 0;
     owner = msg.sender;
   }
 
-  function setUser1(address _who) public {  // 기부자
-    require (msg.sender == owner);
+  modifier onlyOwner {
+    require(msg.sender == owner);
+    _;
+  }
+
+  function setUser1(address _who) public onlyOwner {  // 기부자
     info[_who] = 1;
   }
 
-  function setGov(address _who) public {    // 기부단체
-    require (msg.sender == owner);
+  function setGov(address _who) public onlyOwner {    // 기부단체
     info[_who] = 2;
   }
 
-  function setUser2(address _who) public {  // 기부받는사람
-    require (msg.sender == owner);
+  function setUser2(address _who) public onlyOwner {  // 기부받는사람
     info[_who] = 3;
   }
 
