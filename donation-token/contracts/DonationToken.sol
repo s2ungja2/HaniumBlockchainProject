@@ -58,7 +58,7 @@ contract DonationToken is StandardToken{
     return donatecount[_who];
   }
 
-  /// @dev 호출자의 지갑에서 다른 지갑으로 기부한다.
+  /// @dev 호출자의 지갑에서 _to로 토큰을 기부한다.
   /// @param _to 토큰을 받는 사용자의 지갑주소
   /// @param _value 보내고자 하는 토큰의 양
   /// @return 성공시 true, 실패시 error
@@ -68,6 +68,7 @@ contract DonationToken is StandardToken{
     balances[msg.sender] = balances[msg.sender].add(_value.div(100));
     donatecount[msg.sender] = donatecount[msg.sender].add(1);
   }
+
   /// @dev _from의 지갑에서 _to로 토큰을 기부한다.
   /// @param _from 토큰이 빠져나가는 지갑주소
   /// @param _to 토큰을 받는 사용자의 지갑주소
