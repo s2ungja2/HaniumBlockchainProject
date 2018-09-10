@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GroupSelect extends AppCompatActivity {
+public class DonationGroup extends AppCompatActivity {
 
     final int ITEM_SIZE = 15;
 
