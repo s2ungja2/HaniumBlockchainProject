@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -13,20 +14,21 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class Profile extends AppCompatActivity{
-    TextView id = findViewById(R.id.profile_id);
-    TextView name = findViewById(R.id.profile_name);
-    TextView email = findViewById(R.id.profile_email);
-    TextView sex = findViewById(R.id.profile_sex);
-    TextView rank = findViewById(R.id.profile_rank);
-    TextView count = findViewById(R.id.profile_count);
-    TextView money = findViewById(R.id.profile_money);
-    TextView token = findViewById(R.id.profile_token);
-
+    TextView id, name, email, sex, rank, count, money, token;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
+
+        id = findViewById(R.id.profile_id);
+        name = findViewById(R.id.profile_name);
+        email = findViewById(R.id.profile_email);
+        sex = findViewById(R.id.profile_sex);
+        rank = findViewById(R.id.profile_rank);
+        count = findViewById(R.id.profile_count);
+        money = findViewById(R.id.profile_money);
+        token = findViewById(R.id.profile_token);
 
         Retrofit retrofit = new Retrofit
                 .Builder()
