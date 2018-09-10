@@ -1,6 +1,6 @@
 # Hanium Blockchain Project
 
-### DonationToken(DNTT) 개발용 github입니다.
+### DonationToken(DNTT) & 기부미(GIVEME)어플 개발용 github입니다.
 #### 참여자: [이승재](https://github.com/s2ungja2/), [송현수](https://github.com/songpang), [남윤서](https://github.com/begaonnuri)  
 ---
 ### ***DNTT Coin Contract Address***    
