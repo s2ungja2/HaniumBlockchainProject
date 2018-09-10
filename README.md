@@ -1,4 +1,4 @@
-# Hanium Mentoring Project
+# Hanium Blockchain Project
 ---
 ### DonationToken(DNTT) 개발용 github입니다.
 ### 참여자: 이승재, 송현수, 남윤서  
