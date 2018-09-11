@@ -3,6 +3,55 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/defaultcolor"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/donation_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="기부단체기부"
+                android:textSize="30dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/donation_solo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="개인기부"
+                android:textSize="30dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/check_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기부내역확인"
+            android:textSize="30dp"
+            android:textColor="@color/defaultcolor"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,13 +70,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#FFF"
+        android:background="#fff"
         android:gravity="center">
         <TextView
-            android:id="@+id/group_select"
+            android:id="@+id/ranking_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="기부단체선택"
+            android:text="기부랭킹"
             android:textSize="30dp"
             android:textColor="@color/defaultcolor"/>
     </LinearLayout>
@@ -38,25 +87,11 @@
         android:background="@color/defaultcolor"
         android:gravity="center">
         <TextView
-            android:id="@+id/check_history"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="기부내역확인"
-            android:textSize="30dp"
-            android:textColor="#FFF"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#FFF"
-        android:gravity="center">
-        <TextView
             android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="개인정보"
             android:textSize="30dp"
-            android:textColor="@color/defaultcolor"/>
+            android:textColor="#fff"/>
     </LinearLayout>
 </LinearLayout>
