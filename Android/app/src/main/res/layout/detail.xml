@@ -22,37 +22,36 @@
             android:layout_marginTop="16dp">
 
             <com.transferwise.sequencelayout.SequenceStep
+                android:id="@+id/Sequence_step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:anchor="30 Nov"
-                app:title="사용자 기부"/>
+                />
 
             <com.transferwise.sequencelayout.SequenceStep
+                android:id="@+id/Sequence_step2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:title="Donating BK 처리"/>
+                />
 
             <com.transferwise.sequencelayout.SequenceStep
+                android:id="@+id/Sequence_step3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:paddingTop="4dp"
-                app:active="true"
-                app:anchor="Today"
-                app:subtitle="기부단체에서 확인하여 처리중입니다."
-                app:title="기부단체"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+
                 app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"/>
 
             <com.transferwise.sequencelayout.SequenceStep
+                android:id="@+id/Sequence_step4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="기부 진행"/>
+                android:layout_height="wrap_content" />
 
             <com.transferwise.sequencelayout.SequenceStep
+                android:id="@+id/Sequence_step5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:anchor="2 Dec"
-                app:title="기부완료"/>
+                />
         </com.transferwise.sequencelayout.SequenceLayout>
 
     </LinearLayout>
