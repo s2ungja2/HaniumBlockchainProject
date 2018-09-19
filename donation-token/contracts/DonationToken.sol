@@ -2,7 +2,7 @@ pragma solidity ^0.4.24;
 
 import "./StandardToken.sol";
 
-/// @title 기부토큰 스마트컨트랙
+/// @title 기부토큰 스마트컨트랙 (총 발행량: 21,000,000 DNTT / Decimals: 0)
 /// @author 이승재, 송현수, 남윤서
 contract DonationToken is StandardToken{
   uint public INITIAL_SUPPLY = 21000000;
@@ -68,6 +68,7 @@ contract DonationToken is StandardToken{
     balances[msg.sender] = balances[msg.sender].add(_value.div(100));
     donatecount[msg.sender] = donatecount[msg.sender].add(1);
   }
+
   /// @dev _from의 지갑에서 _to로 토큰을 기부한다.
   /// @param _from 토큰이 빠져나가는 지갑주소
   /// @param _to 토큰을 받는 사용자의 지갑주소
