@@ -4,6 +4,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface RetrofitAPI {
-    @GET("/userinfo.php")
+    @GET("userinfo.php")
     Call<UserRepo> getUserRepo();
 }
