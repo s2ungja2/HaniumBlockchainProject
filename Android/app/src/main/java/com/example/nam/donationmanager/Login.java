@@ -21,7 +21,7 @@ import java.util.Map;
 public class Login extends AppCompatActivity {
 
     private EditText id, password;
-    private Button btn_login;
+    private Button btn_login, btn_register;
     private ProgressBar loading;
     private static String URL_REGIST ="";
 
@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity {
         id = findViewById(R.id.ID);
         password = findViewById(R.id.Password);
         btn_login = findViewById(R.id.btn_login);
+        btn_register = findViewById(R.id.btn_register);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,14 +45,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
-//        Button btn_join = findViewById(R.id.btn_join);
-//        btn_join.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(Login.this, "회원가입은 관리자에게 문의해주세요.", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
+        btn_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent intent = new Intent(getApplicationContext(), Register.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private  void Regist(){
@@ -79,7 +80,7 @@ public class Login extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 return super.getParams();
             }
-        }
+        };
 
     }
 }
