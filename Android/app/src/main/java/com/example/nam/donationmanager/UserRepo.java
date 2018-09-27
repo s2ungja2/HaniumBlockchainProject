@@ -15,7 +15,7 @@ public class UserRepo {
         @SerializedName("userName") String user_name;
         @SerializedName("userEmail") String user_email;
         @SerializedName("userSex") boolean user_sex;
-        @SerializedName("userRank") int user_rank;
+        //@SerializedName("userRank") int user_rank;
         @SerializedName("userDonationcount") int user_count;
         @SerializedName("userMoney") int user_money;
         @SerializedName("userToken") double user_token;

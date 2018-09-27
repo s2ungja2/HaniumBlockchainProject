@@ -53,7 +53,7 @@ public class Profile extends AppCompatActivity{
                         sex.setText("남자");
                     else
                         sex.setText("여자");
-                    rank.setText(""+datalist.get(0).user_rank);
+                    //rank.setText(""+datalist.get(0).user_rank);
                     count.setText(""+datalist.get(0).user_count);
                     money.setText(""+datalist.get(0).user_money);
                     token.setText(""+datalist.get(0).user_token);
