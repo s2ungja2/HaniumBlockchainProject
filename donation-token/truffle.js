@@ -32,7 +32,7 @@ module.exports = {
     ropsten: {
       provider: ropstenProvider,
       // You can get the current gasLimit by running
-      // truffle deploy --network rinkeby
+      // truffle deploy --network ropsten
       // truffle(rinkeby)> web3.eth.getBlock("pending", (error, result) =>
       //   console.log(result.gasLimit))
       gas: 4600000,
