@@ -3,9 +3,10 @@ package com.example.nam.donationmanager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,20 +44,25 @@ public class Profile extends AppCompatActivity{
             public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
                 if(response.isSuccessful()){
                     UserRepo repo = response.body();
-                    id.setText(String.valueOf(repo.result.getUserId()));
-                    name.setText(String.valueOf(repo.result.getUserName()));
-                    email.setText(String.valueOf(repo.result.getUserEmail()));
-                    sex.setText(String.valueOf(repo.result.getUserSex()));
-                    rank.setText(String.valueOf(repo.result.getUserRank()));
-                    count.setText(String.valueOf(repo.result.getUserCount()));
-                    money.setText(String.valueOf(repo.result.getUserMoney()));
-                    token.setText(String.valueOf(repo.result.getUserToken()));
+                    List<UserRepo.Result> datalist = repo.result;
+
+                    id.setText(datalist.get(0).user_id.toString());
+                    name.setText(datalist.get(0).user_name.toString());
+                    email.setText(datalist.get(0).user_email.toString());
+                    if(datalist.get(0).user_sex == false)
+                        sex.setText("남자");
+                    else
+                        sex.setText("여자");
+                    //rank.setText(""+datalist.get(0).user_rank);
+                    count.setText(""+datalist.get(0).user_count);
+                    money.setText(""+datalist.get(0).user_money);
+                    token.setText(""+datalist.get(0).user_token);
                 }
             }
 
             @Override
             public void onFailure(Call<UserRepo> call, Throwable t) {
-
+                Toast.makeText(Profile.this, "실패", Toast.LENGTH_SHORT).show();
             }
         });
     }
