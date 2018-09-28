@@ -15,7 +15,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class Profile extends AppCompatActivity{
-    TextView id, name, email, sex, rank, count, money, token;
+    TextView id, name, email, sex, count, money, token;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
