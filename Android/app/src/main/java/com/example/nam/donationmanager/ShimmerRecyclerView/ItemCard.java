@@ -5,7 +5,6 @@ public class ItemCard {
     private String mTitle;
     private String mDescription;
     private String mThumbnailUrl;
-    private String mSubmitText;
 
     public String getTitle() {
         return mTitle;
@@ -31,12 +30,5 @@ public class ItemCard {
         this.mThumbnailUrl = mThumbnailUrl;
     }
 
-    public String getSubmitText() {
-        return mSubmitText;
-    }
-
-    public void setSubmitText(String mSubmitText) {
-        this.mSubmitText = mSubmitText;
-    }
 }
 

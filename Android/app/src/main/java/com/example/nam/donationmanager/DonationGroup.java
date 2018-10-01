@@ -40,6 +40,7 @@ public class DonationGroup extends AppCompatActivity {
                 loadCards();
             }
         }, 3000);
+
     }
 
     private void loadCards() {

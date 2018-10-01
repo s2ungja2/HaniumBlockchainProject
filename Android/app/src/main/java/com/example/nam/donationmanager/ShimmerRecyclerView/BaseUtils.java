@@ -13,19 +13,17 @@ import java.util.List;
 public class BaseUtils {
 
     private static List<ItemCard> getListCards(Resources resources) {
-        ItemCard ndtvCard = createItemCard(resources, R.string.ndtv_titletext, R.string.ndtv_image_url,
-                R.string.ndtv_subtext, R.string.ndtv_submittext);
+        ItemCard unicefCard = createItemCard(resources, R.string.unicef_titletext, R.string.unicef_subtext);
 
-        ItemCard opCard = createItemCard(resources, R.string.op_titletext, R.string.op_image_url,
-                R.string.op_subtext, R.string.op_submittext);
+        ItemCard neiborsCard = createItemCard(resources, R.string.neibors_titletext, R.string.neibors_subtext);
 
-        ItemCard gotCard = createItemCard(resources, R.string.got_titletext, R.string.got_image_url,
-                R.string.got_subtext, R.string.got_submittext);
+        ItemCard visionCard = createItemCard(resources, R.string.vision_titletext, R.string.vision_subtext);
 
-        ItemCard jetCard = createItemCard(resources, R.string.jet_titletext, R.string.jet_image_url,
-                R.string.jet_subtext, R.string.jet_submittext);
+        ItemCard crossCard = createItemCard(resources, R.string.cross_titletext, R.string.cross_subtext);
 
-        return Arrays.asList(ndtvCard, opCard, gotCard, jetCard);
+        ItemCard umbrellaCard = createItemCard(resources, R.string.umbrella_titletext, R.string.umbrella_subtext);
+
+        return Arrays.asList(unicefCard, neiborsCard, visionCard, crossCard, umbrellaCard);
     }
 
     public static List<ItemCard> getCards(Resources resources) {
@@ -43,14 +41,11 @@ public class BaseUtils {
         return demoConfiguration;
     }
 
-    private static ItemCard createItemCard(Resources resources, @StringRes int title, @StringRes int imageUrl,
-                                           @StringRes int description, @StringRes int submit) {
+    private static ItemCard createItemCard(Resources resources, @StringRes int title, @StringRes int description) {
         ItemCard itemCard = new ItemCard();
 
         itemCard.setTitle(resources.getString(title));
-        itemCard.setThumbnailUrl(resources.getString(imageUrl));
         itemCard.setDescription(resources.getString(description));
-        itemCard.setSubmitText(resources.getString(submit));
 
         return itemCard;
     }
