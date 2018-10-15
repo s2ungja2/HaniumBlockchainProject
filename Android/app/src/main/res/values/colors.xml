@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="defaultcolor">#1188D8</color>
-
+  
     //Shimmer
     <color name="colorPrimaryGrid">#2874f0</color>
     <color name="colorPrimaryDarkGrid">#2368d7</color>
@@ -18,4 +18,5 @@
     <color name="textSecondary">#8b8b8b</color>
 
     <color name="demo_dark_transparent">#24000000</color>
+    <color name="colortext">#000000</color>
 </resources>
