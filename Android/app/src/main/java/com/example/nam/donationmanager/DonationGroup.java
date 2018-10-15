@@ -1,46 +1,50 @@
 package com.example.nam.donationmanager;
 
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
+import com.example.nam.donationmanager.ShimmerRecyclerView.BaseUtils;
+import com.example.nam.donationmanager.ShimmerRecyclerView.CardAdapter;
+import com.example.nam.donationmanager.ShimmerRecyclerView.DemoConfiguration;
 
 public class DonationGroup extends AppCompatActivity {
-
-    final int ITEM_SIZE = 15;
+    private ShimmerRecyclerView shimmerRecycler;
+    private CardAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.group_select);
+        RecyclerView.LayoutManager layoutManager;
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(layoutManager);
+        final DemoConfiguration demoConfiguration = BaseUtils.getDemoConfiguration(this);
+        setContentView(demoConfiguration.getLayoutResource());
+        layoutManager = demoConfiguration.getLayoutManager();
 
-        List<Item> items = new ArrayList<>();
-        Item[] item = new Item[ITEM_SIZE];
-        item[0] = new Item(R.drawable.unicef, "유니세프");
-        item[1] = new Item(R.drawable.neighbors, "굿네이버스");
-        item[2] = new Item(R.drawable.redcross, "대한적십자사");
-        item[3] = new Item(R.drawable.kfhi, "기아대책");
-        item[4] = new Item(R.drawable.kfhi, "가나");
-        item[5] = new Item(R.drawable.kfhi, "다라");
-        item[6] = new Item(R.drawable.kfhi, "마바");
-        item[7] = new Item(R.drawable.kfhi, "사아자");
+        shimmerRecycler = findViewById(R.id.shimmer_recycler_view);
 
-        for (int i = 0; i < ITEM_SIZE; i++) {
-            items.add(item[i]);
+        if (demoConfiguration.getItemDecoration() != null) {
+            shimmerRecycler.addItemDecoration(demoConfiguration.getItemDecoration());
         }
 
-        recyclerView.setAdapter(new RecyclerAdapter(getApplicationContext(), items, R.layout.activity_main));
+        mAdapter = new CardAdapter();
+
+        shimmerRecycler.setLayoutManager(layoutManager);
+        shimmerRecycler.setAdapter(mAdapter);
+        shimmerRecycler.showShimmerAdapter();
+
+        shimmerRecycler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadCards();
+            }
+        }, 3000);
+
+    }
+
+    private void loadCards() {
+        mAdapter.setCards(BaseUtils.getCards(getResources()));
+        shimmerRecycler.hideShimmerAdapter();
     }
 }

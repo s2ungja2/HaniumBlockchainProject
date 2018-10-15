@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">DonationManager</string>
+
+    <string name="unicef_titletext">유니세프</string>
+    <string name="unicef_subtext">설명</string>
+    <string name="unicef_image_url">http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/image_embed/public/2016/04/29/game-thrones-daenerys-dragon-drogon.jpg</string>
+    <string name="submittext">기부하기</string>
+
+    <string name="neibors_titletext">굿네이버스</string>
+    <string name="neibors_subtext">설명</string>
+    <string name="neibors_image_url">http://images.fonearena.com/blog/wp-content/uploads/2016/12/OnePlus-3-and-3T-leather-case-1.jpg</string>
+
+    <string name="vision_titletext">월드비전</string>
+    <string name="vision_subtext">설명</string>
+    <string name="vision_image_url">http://i.ndtvimg.com/i/2016-12/agni-5_650x400_71482721510.jpg</string>
+
+    <string name="cross_titletext">대한적십자사</string>
+    <string name="cross_subtext">설명</string>
+    <string name="cross_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="umbrella_titletext">초록우산</string>
+    <string name="umbrella_subtext">설명</string>
+    <string name="umbrella_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
 </resources>
