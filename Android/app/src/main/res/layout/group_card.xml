@@ -28,7 +28,7 @@
                 android:paddingRight="16dp"
                 android:textColor="@color/textPrimary"
                 android:textSize="16sp"
-                tools:text="@string/unicef_titletext" />
+                tools:text="@string/group1_titletext" />
 
             <TextView
                 android:id="@+id/card_subtitle"
@@ -40,7 +40,7 @@
                 android:paddingRight="16dp"
                 android:textColor="@color/textSecondary"
                 android:textSize="14sp"
-                tools:text="@string/unicef_subtext" />
+                tools:text="@string/group1_subtext" />
         </LinearLayout>
 
         <ImageView

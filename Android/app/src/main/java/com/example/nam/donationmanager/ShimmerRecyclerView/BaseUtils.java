@@ -2,6 +2,7 @@ package com.example.nam.donationmanager.ShimmerRecyclerView;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.support.v7.widget.LinearLayoutManager;
 
@@ -13,17 +14,18 @@ import java.util.List;
 public class BaseUtils {
 
     private static List<ItemCard> getListCards(Resources resources) {
-        ItemCard unicefCard = createItemCard(resources, R.string.unicef_titletext, R.string.unicef_subtext);
+        ItemCard card1 = createItemCard(resources, R.string.group1_titletext, R.string.group1_subtext, R.drawable.unicef);
+        ItemCard card2 = createItemCard(resources, R.string.group2_titletext, R.string.group2_subtext, R.drawable.neighbors);
+        ItemCard card3 = createItemCard(resources, R.string.group3_titletext, R.string.group3_subtext, R.drawable.neighbors);
+        ItemCard card4 = createItemCard(resources, R.string.group4_titletext, R.string.group4_subtext, R.drawable.neighbors);
+        ItemCard card5 = createItemCard(resources, R.string.group5_titletext, R.string.group5_subtext, R.drawable.neighbors);
+        ItemCard card6 = createItemCard(resources, R.string.group6_titletext, R.string.group6_subtext, R.drawable.neighbors);
+        ItemCard card7 = createItemCard(resources, R.string.group7_titletext, R.string.group7_subtext, R.drawable.neighbors);
+        ItemCard card8 = createItemCard(resources, R.string.group8_titletext, R.string.group8_subtext, R.drawable.neighbors);
+        ItemCard card9 = createItemCard(resources, R.string.group9_titletext, R.string.group9_subtext, R.drawable.neighbors);
+        ItemCard card10 = createItemCard(resources, R.string.group10_titletext, R.string.group10_subtext, R.drawable.neighbors);
 
-        ItemCard neiborsCard = createItemCard(resources, R.string.neibors_titletext, R.string.neibors_subtext);
-
-        ItemCard visionCard = createItemCard(resources, R.string.vision_titletext, R.string.vision_subtext);
-
-        ItemCard crossCard = createItemCard(resources, R.string.cross_titletext, R.string.cross_subtext);
-
-        ItemCard umbrellaCard = createItemCard(resources, R.string.umbrella_titletext, R.string.umbrella_subtext);
-
-        return Arrays.asList(unicefCard, neiborsCard, visionCard, crossCard, umbrellaCard);
+        return Arrays.asList(card1, card2, card3, card4, card5, card6, card7, card8, card9, card10);
     }
 
     public static List<ItemCard> getCards(Resources resources) {
@@ -41,11 +43,12 @@ public class BaseUtils {
         return demoConfiguration;
     }
 
-    private static ItemCard createItemCard(Resources resources, @StringRes int title, @StringRes int description) {
+    private static ItemCard createItemCard(Resources resources, @StringRes int title, @StringRes int description, @DrawableRes int image) {
         ItemCard itemCard = new ItemCard();
 
         itemCard.setTitle(resources.getString(title));
         itemCard.setDescription(resources.getString(description));
+        itemCard.setThumbnailUrl(resources.getDrawable(image));
 
         return itemCard;
     }

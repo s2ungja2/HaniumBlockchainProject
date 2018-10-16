@@ -10,12 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
     <EditText
-        android:id="@+id/solo_token"
+        android:id="@+id/input_token"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:inputType="number"
-        android:hint="      기부할 금액을 입력해주세요."
+        android:hint="      기부할 토큰을 입력해주세요."
         android:textColorHint="#fff"
         android:textSize="20dp"/>
 

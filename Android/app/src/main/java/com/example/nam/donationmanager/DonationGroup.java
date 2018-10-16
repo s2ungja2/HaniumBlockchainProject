@@ -1,17 +1,23 @@
 package com.example.nam.donationmanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
 import com.example.nam.donationmanager.ShimmerRecyclerView.BaseUtils;
 import com.example.nam.donationmanager.ShimmerRecyclerView.CardAdapter;
 import com.example.nam.donationmanager.ShimmerRecyclerView.DemoConfiguration;
+import com.example.nam.donationmanager.ShimmerRecyclerView.ItemHolder;
 
 public class DonationGroup extends AppCompatActivity {
     private ShimmerRecyclerView shimmerRecycler;
     private CardAdapter mAdapter;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -103,7 +103,7 @@ public class TokenChange extends AppCompatActivity {
                 updateToken = currToken + change_token;
                 Log.d("onclick", "onclick");
 
-                Call<UserRepo> setCall = api.setUserRepo(userNum, updateMoney, updateToken);
+                Call<UserRepo> setCall = api.setUserRepoTokenChange(userNum, updateMoney, updateToken);
                 setCall.enqueue(new Callback<UserRepo>() {
                     @Override
                     public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
