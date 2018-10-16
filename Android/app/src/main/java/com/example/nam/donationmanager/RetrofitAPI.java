@@ -15,5 +15,5 @@ public interface RetrofitAPI {
 
     // Donation에서 기부
     @GET("donation.php")
-    Call<UserRepo> setUserRepoDonation(@Query("userNum") int userNum, @Query("userNum") int govNum, @Query("userToken") double userToken, @Query("userToken") double govToken);
+    Call<UserRepo> setUserRepoDonation(@Query("userNum") int userNum, @Query("govNum") int govNum, @Query("userToken") double userToken, @Query("govToken") double govToken);
 }
