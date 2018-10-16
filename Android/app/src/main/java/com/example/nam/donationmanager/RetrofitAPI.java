@@ -11,5 +11,9 @@ public interface RetrofitAPI {
 
     // TokenChange에서 값 교환
     @GET("tokenchange.php")
-    Call<UserRepo> setUserRepo(@Query("userNum") int num, @Query("userMoney") int money, @Query("userToken") double token);
+    Call<UserRepo> setUserRepoTokenChange(@Query("userNum") int num, @Query("userMoney") int money, @Query("userToken") double token);
+
+    // Donation에서 기부
+    @GET("donation.php")
+    Call<UserRepo> setUserRepoDonation(@Query("userNum") int userNum, @Query("userNum") int govNum, @Query("userToken") double userToken, @Query("userToken") double govToken);
 }

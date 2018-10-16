@@ -15,15 +15,15 @@ public class MenuSelect extends AppCompatActivity {
 
         TextView token_change = findViewById(R.id.token_change);
         TextView donation_group = findViewById(R.id.donation_group);
-        TextView donation_solo = findViewById(R.id.donation_solo);
+        TextView donation = findViewById(R.id.donation_solo);
         TextView check_history = findViewById(R.id.check_history);
         TextView profile = findViewById(R.id.profile);
         TextView ranking = findViewById(R.id.ranking_list);
 
-        donation_solo.setOnClickListener(new View.OnClickListener() {
+        donation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_select = new Intent(getApplicationContext(), DonationSolo.class);
+                Intent intent_select = new Intent(getApplicationContext(), Donation.class);
                 startActivity(intent_select);
             }
         });

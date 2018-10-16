@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,69 +28,8 @@ public class TokenChange extends AppCompatActivity {
     Button change;
     double change_token;
 
-    int updateMoney, userNum;
+    int updateMoney, userNum, currMoney;
     double updateToken, currToken;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.token_change);
-
-        won = findViewById(R.id.won);
-        token = findViewById(R.id.token);
-        change = findViewById(R.id.change);
-
-        DecimalFormat decimalFormat = new DecimalFormat("#,###");       //숫자 형식 정해줌
-        won.addTextChangedListener(textWatcher);
-
-        final Retrofit retrofit = new Retrofit
-                .Builder()
-                .baseUrl("http://14.63.194.247/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                RetrofitAPI api = retrofit.create(RetrofitAPI.class);
-                Call<UserRepo> getCall = api.getUserRepo();
-                getCall.enqueue(new Callback<UserRepo>() {
-                    @Override
-                    public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
-                        UserRepo repo = response.body();
-                        List<UserRepo.Result> datalist = repo.result;
-                        userNum = datalist.get(0).user_num;
-                        currToken = datalist.get(0).user_token;
-                        updateMoney = datalist.get(0).user_money - Integer.parseInt(won.getText().toString());
-                        updateToken = currToken + change_token;
-                        Toast.makeText(TokenChange.this, ""+userNum+"/"+updateMoney+"/"+updateToken, Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onFailure(Call<UserRepo> call, Throwable t) {
-                        Toast.makeText(TokenChange.this, "get 실패", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                Call<UserRepo> setCall = api.setUserRepo(userNum, updateMoney, updateToken);
-                setCall.enqueue(new Callback<UserRepo>() {
-                    @Override
-                    public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
-                        Toast.makeText(TokenChange.this, change_token + "토큰이 교환되었습니다.", Toast.LENGTH_LONG).show();
-                        finish();
-                    }
-
-                    @Override
-                    public void onFailure(Call<UserRepo> call, Throwable t) {
-                        //Toast.makeText(TokenChange.this, "set 실패", Toast.LENGTH_SHORT).show();
-                        finish();
-                    }
-                });
-            }
-        });
-
-
-
-    }
 
     TextWatcher textWatcher = new TextWatcher() {       //EditText 변화 있는지 확인해줌
         String won_result;
@@ -118,4 +58,66 @@ public class TokenChange extends AppCompatActivity {
 
         }
     };
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.token_change);
+
+        won = findViewById(R.id.won);
+        token = findViewById(R.id.token);
+        change = findViewById(R.id.change);
+
+        DecimalFormat decimalFormat = new DecimalFormat("#,###");       //숫자 형식 정해줌
+        won.addTextChangedListener(textWatcher);
+
+        Retrofit retrofit = new Retrofit
+                .Builder()
+                .baseUrl("http://14.63.194.247/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        final RetrofitAPI api = retrofit.create(RetrofitAPI.class);
+        Call<UserRepo> getCall = api.getUserRepo();
+        getCall.enqueue(new Callback<UserRepo>() {
+            @Override
+            public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
+                UserRepo repo = response.body();
+                List<UserRepo.Result> datalist = repo.result;
+                userNum = datalist.get(1).user_num;
+                currToken = datalist.get(1).user_token;
+                currMoney = datalist.get(1).user_money;
+                Log.d("get onresponse", "get onresponse");
+            }
+
+            @Override
+            public void onFailure(Call<UserRepo> call, Throwable t) {
+                Log.d("get onfailure", "get onfailure");
+            }
+        });
+
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                updateMoney = currMoney - Integer.parseInt(won.getText().toString());
+                updateToken = currToken + change_token;
+                Log.d("onclick", "onclick");
+
+                Call<UserRepo> setCall = api.setUserRepoTokenChange(userNum, updateMoney, updateToken);
+                setCall.enqueue(new Callback<UserRepo>() {
+                    @Override
+                    public void onResponse(Call<UserRepo> call, Response<UserRepo> response) {
+                        Log.d("set onresponse", "set onresponse");
+                    }
+
+                    @Override
+                    public void onFailure(Call<UserRepo> call, Throwable t) {
+                        Log.d("set onfailure", "set onfailure");
+                    }
+                });
+                Toast.makeText(TokenChange.this, change_token+"토큰이 교환되었습니다.\n 현재토큰 " + updateToken + " Token", Toast.LENGTH_LONG).show();
+                finish();
+            }
+        });
+    }
 }

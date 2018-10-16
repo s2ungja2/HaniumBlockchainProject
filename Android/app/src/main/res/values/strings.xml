@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">DonationManager</string>
+
+    <string name="group1_titletext">기부단체 1</string>
+    <string name="group1_subtext">기부단체 1에 대한 소개 글입니다.</string>
+    <string name="group1_image_url">http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/image_embed/public/2016/04/29/game-thrones-daenerys-dragon-drogon.jpg</string>
+    <string name="submittext">기부하기</string>
+
+    <string name="group2_titletext">기부단체 2</string>
+    <string name="group2_subtext">기부단체 2에 대한 소개 글입니다.</string>
+    <string name="group2_image_url">http://images.fonearena.com/blog/wp-content/uploads/2016/12/OnePlus-3-and-3T-leather-case-1.jpg</string>
+
+    <string name="group3_titletext">기부단체 3</string>
+    <string name="group3_subtext">기부단체 3에 대한 소개 글입니다.</string>
+    <string name="group3_image_url">http://i.ndtvimg.com/i/2016-12/agni-5_650x400_71482721510.jpg</string>
+
+    <string name="group4_titletext">기부단체 4</string>
+    <string name="group4_subtext">기부단체 4에 대한 소개 글입니다.</string>
+    <string name="group4_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group5_titletext">기부단체 5</string>
+    <string name="group5_subtext">기부단체 5에 대한 소개 글입니다.</string>
+    <string name="group5_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group6_titletext">기부단체 6</string>
+    <string name="group6_subtext">기부단체 6에 대한 소개 글입니다.</string>
+    <string name="group6_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group7_titletext">기부단체 7</string>
+    <string name="group7_subtext">기부단체 7에 대한 소개 글입니다.</string>
+    <string name="group7_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group8_titletext">기부단체 8</string>
+    <string name="group8_subtext">기부단체 8에 대한 소개 글입니다.</string>
+    <string name="group8_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group9_titletext">기부단체 9</string>
+    <string name="group9_subtext">기부단체 9에 대한 소개 글입니다.</string>
+    <string name="group9_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
+    <string name="group10_titletext">기부단체 10</string>
+    <string name="group10_subtext">기부단체 10에 대한 소개 글입니다.</string>
+    <string name="group10_image_url">http://i.ndtvimg.com/i/2016-11/jet-airways_650x400_51480009251.jpg</string>
+
 </resources>

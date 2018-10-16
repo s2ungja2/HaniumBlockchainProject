@@ -28,7 +28,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-//  현수
+    //  현수
     implementation 'com.github.transferwise:sequence-layout:1.0.7'
     implementation 'devlight.io:navigationtabbar:1.2.5'
     implementation 'com.shuhart.stepview:stepview:1.2.8'
@@ -38,6 +38,9 @@ dependencies {
     //HTTP 통신
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    //기부단체목록 UI
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
 }
 
 configurations.all {
